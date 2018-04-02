@@ -19,32 +19,45 @@
 
 <title>Insurance Discourse</title>
 
-<body>
+<body onload="landingLoad()">
+    <div id="loader"></div>
+    <div id="page">
+        <div class="top">
+            <img id="landing-logo" src="img/logo_color.png">
+        </div>
 
-    <div class="top">
-        <img id="landing-logo" src="img/logo_color.png">
-    </div>
+        <div class="purple-tier">
+            <img id="supergraphic-logo" src="img/supergraphic.png">
+            <div id="tagline">
+                Moving the conversation forward.</div>
+            <a href="feed.html">
+                <div id="get-started-button">
+                    <button>Get Started</button>
+                </div>
+            </a>
+        </div>
 
-    <div class="purple-tier">
-        <img id="supergraphic-logo" src="img/supergraphic.png">
-        <div id="tagline">
-            Moving the conversation forward.</div>
-        <a href="feed.html">
-            <div id="get-started-button">
-                <button>Get Started</button>
+        <div class="footer">
+            <div id="footer-left">Insurance Discourse &copy; 2018.</div>
+            <div id="footer-right">
+                User Agreement
+                <br/> Privacy Policy
             </div>
-        </a>
-    </div>
-
-    <div class="footer">
-        <div id="footer-left">Insurance Discourse &copy; 2018.</div>
-        <div id="footer-right">
-            User Agreement
-            <br/> Privacy Policy
         </div>
     </div>
 
+    <script>
+        var myVar;
 
+        function landingLoad() {
+            myVar = setTimeout(showPage, 700);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("page").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

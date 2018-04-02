@@ -207,9 +207,11 @@ body {
 /*--------LANDING INDEX----------*/
 
 .top {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 78px;
-    z-index: 10000;
     background-color: #ffffff;
 }
 
@@ -221,10 +223,12 @@ body {
 }
 
 .purple-tier {
+    position: absolute;
+    left: 0;
+    top: 78px;
     width: 100%;
     height: 750px;
     background: linear-gradient(to top right, #171260, #491C89);
-    position: relative;
 }
 
 #supergraphic-logo {
@@ -266,6 +270,9 @@ body {
 }
 
 .footer {
+    position: absolute;
+    top: 822px;
+    left: 0;
     width: 100%;
     height: 200px;
     color: white;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <!--    linked files-->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--    linked fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+
+</head>
+
+<title>User's Name</title>
+
+<body onload="landingLoad()">
+
+    <body onload="landingLoad()">
+        <div id="loader"></div>
+        <div id="page">
+            <div class="top-nav"></div>
+
+            <div class="side-nav">
+                <img id="supergraphic-logo-sidenav" src="img/supergraphic.png">
+
+                <!--link back to home-->
+                <a href="feed.html">
+                    <img id="white-logo" src="img/logo_white.png">
+                </a>
+
+                <!--link to profile-->
+                <a href="my-profile.html">
+                    <div id="profile-pic">
+                        <!--if no profile picture-->
+                        <div id="user-initials">JO</div>
+                    </div>
+                </a>
+
+                <div id="user-title">Hi, Jocelyn</div>
+                <!--link to new event page-->
+                <a href="create-an-event.html">
+                    <div id="new-event-button">
+                        <button>Create New Event</button>
+                    </div>
+                </a>
+
+                <div id="explore-categories">
+                    <eyebrow>Explore</eyebrow>
+                    <br/> Ideas
+                    <br/> Specialties
+                    <br/> Companies
+                    <br/> Charities
+
+                </div>
+            </div>
+
+            Start Event Details page here!
+        </div>
+        <script>
+            var myVar;
+
+            function landingLoad() {
+                myVar = setTimeout(showPage, 700);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("page").style.display = "block";
+            }
+        </script>
+    </body>
+
+</html>

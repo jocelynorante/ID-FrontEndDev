@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <!--    linked files-->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--    linked fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+
+</head>
+
+<title>Insurance Discourse | Create an Event</title>
+
+<body>
+    <div class="top-nav"></div>
+
+    <div class="side-nav">
+        <img id="supergraphic-logo-sidenav" src="img/supergraphic.png">
+
+        <!--link back to home-->
+        <a href="feed.html">
+            <img id="white-logo" src="img/logo_white.png">
+        </a>
+
+        <!--link to profile-->
+        <a href="my-profile.html">
+            <div id="profile-pic">
+                <!--if no profile picture-->
+                <div id="user-initials">JO</div>
+            </div>
+        </a>
+
+        <div id="user-title">Hi, Jocelyn</div>
+        <!--link to new event page-->
+        <a href="create-an-event.html">
+            <div id="new-event-button">
+                <button>Create New Event</button>
+            </div>
+        </a>
+
+        <div id="explore-categories">
+            <eyebrow>Explore</eyebrow>
+            <br/> Ideas
+            <br/> Specialties
+            <br/> Companies
+            <br/> Charities
+
+        </div>
+
+    </div>
+    <div class="event-form">
+        <!--Event Title-->
+        <input type="text" id="eventtitle" name="eventTitle" placeholder="Event Title">
+        <br/>
+        <br/>
+        <br/>
+
+        <!--Event Type-->
+        <div class="event-type">
+            <h2>Event Type</h2>
+            <label class="container">Round Table
+                <input type="checkbox" checked="checked">
+                <span class="radio-button"></span>
+            </label>
+
+            <label class="container">Panel
+                <input type="checkbox">
+                <span class="radio-button"></span>
+            </label>
+
+            <label class="container">Speaker
+                <input type="checkbox">
+                <span class="radio-button"></span>
+            </label>
+        </div>
+
+        <!--Event Description-->
+        <div class="event-description">
+            <h2>Event Description</h2>
+            <textarea></textarea>
+        </div>
+
+        <!--Topic Areas-->
+        <div class="add-tags">
+            <h2>Topic Areas</h2> Add tags here.
+        </div>
+
+        <!--Charity-->
+        <div class="choose-charity">
+            <h2>Charity</h2>
+            <select id="charity-dropdown">
+                <option>Charity 1</option>
+                <option>Charity 2</option>
+                <option>Charity 3</option>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>

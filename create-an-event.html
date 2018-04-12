@@ -64,52 +64,122 @@
             </div>
 
         </div>
+
         <div class="event-form">
-            <!--Event Title-->
-            <input type="text" id="eventtitle" name="eventTitle" placeholder="Event Title">
-            <br/>
-            <br/>
-            <br/>
+            <p id="event-form-title">Create new event</p>
 
-            <!--Event Type-->
-            <div class="event-type">
-                <h2>Event Type</h2>
-                <label class="container">Round Table
-                    <input type="checkbox" checked="checked">
-                    <span class="radio-button"></span>
-                </label>
 
-                <label class="container">Panel
-                    <input type="checkbox">
-                    <span class="radio-button"></span>
-                </label>
+            <div class="event-form-content">
+                <!--enter an event title -->
+                <input type="text" id="event-title" name="eventTitle" placeholder="Enter an Event Title">
 
-                <label class="container">Speaker
-                    <input type="checkbox">
-                    <span class="radio-button"></span>
-                </label>
-            </div>
+                <!--public or private?-->
+                <div class="public-or-private">
+                    <label class="container">Public Event
+                        <input type="checkbox" checked="checked">
+                        <span class="radio-button"></span>
+                    </label>
 
-            <!--Event Description-->
-            <div class="event-description">
-                <h2>Event Description</h2>
-                <textarea></textarea>
-            </div>
+                    <label class="container">Private Event
+                        <input type="checkbox">
+                        <span class="radio-button"></span>
+                    </label>
+                </div>
 
-            <!--Topic Areas-->
-            <div class="add-tags">
-                <h2>Topic Areas</h2> Add tags here.
-            </div>
+                <!--date/time/location dropdowns-->
+                <div class="date-time-location">
+                    <select id="date-dropdown">
+                        <option>Date</option>
+                    </select>
 
-            <!--Charity-->
-            <div class="choose-charity">
-                <h2>Charity</h2>
-                <select id="charity-dropdown">
-                    <option>Charity 1</option>
-                    <option>Charity 2</option>
-                    <option>Charity 3</option>
-                </select>
-            </div>
+                    <select id="time-dropdown">
+                        <option>Time</option>
+                    </select>
+
+                    <select id="location-dropdown">
+                        <option>Location</option>
+                    </select>
+                </div>
+
+                <div class="dividing-line"></div>
+
+                <!--event type-->
+                <div class="event-type">
+                    <event-eyebrow>Event Type</event-eyebrow>
+                    <br/>
+                    <br/>
+                    <label class="container">Panel
+                        <input type="checkbox" checked="checked">
+                        <span class="radio-button"></span>
+                    </label>
+                    <label class="container">Round Table
+                        <input type="checkbox">
+                        <span class="radio-button"></span>
+                    </label>
+                    <label class="container">Presentation
+                        <input type="checkbox">
+                        <span class="radio-button"></span>
+                    </label>
+                </div>
+
+                <!--event description-->
+                <div class="event-description">
+                    <event-eyebrow>Event Description</event-eyebrow>
+                    <br/>
+                    <br/>
+                    <textarea id="event-description" placeholder="Tell us more about the event."></textarea>
+                </div>
+
+                <!--related topics-->
+                <div class="related-topics">
+                    <event-eyebrow>Related Topics</event-eyebrow>
+                    <br/>
+                    <br/>
+                    <input type="text" id="related-topics">
+                </div>
+
+                <!--max people-->
+                <div class="max-people">
+                    <event-eyebrow>Max &#35; of People</event-eyebrow>
+                    <br/>
+                    <br/>
+                    <select id="max-people-dropdown">
+                        <option>1-10</option>
+                        <option>10-30</option>
+                        <option>30-50</option>
+                        <option>50-100</option>
+                    </select>
+                </div>
+
+                <div class="dividing-line"></div>
+
+                <!--who's curating?-->
+                <div class="whos-curating">
+                    <event-eyebrow>Who's Curating?</event-eyebrow>
+                    <br/>
+                    <br/>
+                    <label class="container">Me
+                        <input type="checkbox" checked="checked">
+                        <span class="radio-button"></span>
+                    </label>
+                    <label class="container">Invite Someone
+                        <input type="checkbox">
+                        <span class="radio-button"></span>
+                    </label>
+                    <label class="container">Find me Someone
+                        <input type="checkbox">
+                        <span class="radio-button"></span>
+                    </label>
+                </div>
+                <!--submit-->
+                <div class="submit-button">
+                    <button>Submit</button>
+                </div>
+
+            </div>  
+
+
+
         </div>
     </div>
     <script>

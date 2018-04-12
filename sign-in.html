@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <!--    linked files-->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--    linked fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+
+</head>
+
+<title>Insurance Discourse</title>
+
+<body>
+    <div class="sign-in">
+        <img id="supergraphic-logo-signin" src="img/supergraphic.png">
+        <a href="index.html"><img id="sign-in-logo" src="img/logo_white.png"></a>
+        <br/>
+        <div class="sign-in-form">
+            <eyebrow>Enter your e-mail</eyebrow>
+            <input id="signup-input" type="username" placeholder="johndoe@gmail.com">
+            <eyebrow>Create a password</eyebrow>
+            <input id="signup-input" type="password" placeholder="password">
+            <br/>
+            <a href="feed.html">
+                <button id="sign-up-button">Enter</button>
+            </a>
+
+            <div id="sign-in-or">or</div>
+            <img id="linkedin-login" src=img/linkedinlogin.png>
+
+
+
+        </div>
+
+
+        <script>
+            var myVar;
+
+            function landingLoad() {
+                myVar = setTimeout(showPage, 700);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("page").style.display = "block";
+            }
+        </script>
+</body>
+
+</html>

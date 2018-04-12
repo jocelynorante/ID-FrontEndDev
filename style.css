@@ -1026,3 +1026,29 @@ textarea::-webkit-input-placeholder {
     opacity: 0.8;
     transition: 1s;
 }
+
+
+/*EVENT DETAILS PAGE*/
+
+.breadcrumbs {
+    width: 1000px;
+    padding: 0px 0px 20px 0px;
+}
+
+.event-details-left {
+    width: 450px;
+    height: 600px;
+    position: relative;
+    top: 40px;
+    float: left;
+    border-right: 1px solid #606060;
+}
+
+.event-details-right {
+    float: left;
+    background-color: white;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}

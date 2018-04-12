@@ -20,67 +20,78 @@
 <title>User's Name</title>
 
 <body onload="landingLoad()">
-
-    <body onload="landingLoad()">
-        <div id="loader"></div>
-        <div id="page">
-            <div class="top-nav">
-                <div class="top-nav-icons-group">
-                    <div id="top-nav-icon"> <img src="img/calendar-icon.png" height="27px"></div>
-                    <div id="top-nav-icon"> <img src="img/members-icon.png" height="26px"></div>
-                    <div id="top-nav-icon"> <img src="img/messages-icon.png" height="25px"></div>
-                </div>
+    <div id="loader"></div>
+    <div id="page">
+        <div class="top-nav">
+            <div class="top-nav-icons-group">
+                <div id="top-nav-icon"> <img src="img/calendar-icon.png" height="27px"></div>
+                <div id="top-nav-icon"> <img src="img/members-icon.png" height="26px"></div>
+                <div id="top-nav-icon"> <img src="img/messages-icon.png" height="25px"></div>
             </div>
-
-            <div class="side-nav">
-                <img id="supergraphic-logo-sidenav" src="img/supergraphic.png">
-
-                <!--link back to home-->
-                <a href="feed.html">
-                    <img id="white-logo" src="img/logo_white.png">
-                </a>
-
-                <!--link to profile-->
-                <a href="my-profile.html">
-                    <div id="profile-pic">
-                        <!--if no profile picture-->
-                        <div id="user-initials">CS</div>
-                    </div>
-                </a>
-
-                <div id="user-title">Hi, Charlie</div>
-                <!--link to new event page-->
-                <a href="create-an-event.html">
-                    <div id="new-event-button">
-                        <button>Create New Event</button>
-                    </div>
-                </a>
-
-                <div id="explore-categories">
-                    <eyebrow>Explore</eyebrow>
-                    <br/> <a href="#">Ideas</a>
-                    <br/> <a href="#">Specialties</a>
-                    <br/> <a href="#">Companies</a>
-                    <br/> <a href="#">Charities</a>
-
-                </div>
-
-            </div>
-
-            Start Event Details page here!
         </div>
-        <script>
-            var myVar;
 
-            function landingLoad() {
-                myVar = setTimeout(showPage, 700);
-            }
+        <div class="side-nav">
+            <img id="supergraphic-logo-sidenav" src="img/supergraphic.png">
 
-            function showPage() {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("page").style.display = "block";
-            }
-        </script>
-    </body>
+            <!--link back to home-->
+            <a href="feed.html">
+                <img id="white-logo" src="img/logo_white.png">
+            </a>
+
+            <!--link to profile-->
+            <a href="my-profile.html">
+                <div id="profile-pic">
+                    <!--if no profile picture-->
+                    <div id="user-initials">CS</div>
+                </div>
+            </a>
+
+            <div id="user-title">Hi, Charlie</div>
+            <!--link to new event page-->
+            <a href="create-an-event.html">
+                <div id="new-event-button">
+                    <button>Create New Event</button>
+                </div>
+            </a>
+
+            <div id="explore-categories">
+                <eyebrow>Explore</eyebrow>
+                <br/> <a href="#">Ideas</a>
+                <br/> <a href="#">Specialties</a>
+                <br/> <a href="#">Companies</a>
+                <br/> <a href="#">Charities</a>
+
+            </div>
+
+        </div>
+
+        <div class="breadcrumbs">Event Landing Page > Event Details</div>
+
+        <div class="event-details-header"><img src="img/event-details-header.png" width="1000px"></div>
+
+        <div class="event-details-left">
+            Event status: Approved
+            <br/>
+            <div id="event-details-attending">
+                You are attending this event
+            </div>
+        </div>
+        <div class="event-details-right">
+            This is where the feed goes
+        </div>
+    </div>
+    <script>
+        var myVar;
+
+        function landingLoad() {
+            myVar = setTimeout(showPage, 700);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("page").style.display = "block";
+        }
+    </script>
+</body>
 
 </html>

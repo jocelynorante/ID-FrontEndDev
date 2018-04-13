@@ -1033,15 +1033,141 @@ textarea::-webkit-input-placeholder {
 .breadcrumbs {
     width: 1000px;
     padding: 0px 0px 20px 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.breadcrumbs a {
+    color: #0C5C93;
+    font-weight: 800;
+}
+
+#event-status {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#event-details-attending {
+    text-align: center;
+    padding: 10px;
+    width: 375px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0C5C93;
+    border: #0C5C93 solid 2px;
+}
+
+#header-overlay {
+    background-color: #0C5C93;
+    opacity: 0.76;
+    width: 364px;
+    padding: 40px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 41px;
+    position: absolute;
+    top: 300px;
 }
 
 .event-details-left {
     width: 450px;
-    height: 600px;
+    height: 700px;
     position: relative;
     top: 40px;
     float: left;
     border-right: 1px solid #606060;
+    margin-bottom: 100px;
+}
+
+.event-details-left #upcoming-events-post {
+    width: 386px;
+}
+
+.event-details-left #upcoming-events-post #upcoming-events-date-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #0C5C93;
+}
+
+.event-details-left #upcoming-events-post #upcoming-events-date-box #upcoming-events-date {
+    color: #ffffff;
+}
+
+.event-details-left #upcoming-events-post #upcoming-events-date-box #upcoming-events-date dayOfWeek {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+}
+
+.event-details-left #upcoming-events-post #upcoming-events-date-box #upcoming-events-date numberMonth {
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.event-details-left #upcoming-events-post #upcoming-events-date-box #upcoming-events-date year {
+    font-size: 20px;
+    letter-spacing: 1.92px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.event-details-left #upcoming-events-details {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0C5C93;
+}
+
+.event-details-left #upcoming-events-details eventTime {
+    font-weight: 800;
+}
+
+#event-description {
+    clear: both;
+    position: relative;
+    top: 120px;
+    width: 400px;
+    line-height: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #606060;
+}
+
+#number-attending {
+    position: relative;
+    top: 150px;
+    width: 180px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#thumbnails-attending {
+    display: table;
+    width: 400px;
+    position: relative;
+    top: 160px;
+}
+
+#member-thumbnail {
+    display: table-cell;
+    width: 30px;
+    height: 70px;
+    background-color: grey;
+    border-radius: 16px;
 }
 
 .event-details-right {
@@ -1323,4 +1449,25 @@ thought-number {
 timestamp {
     font-weight: 100;
     color: #393939;
+}
+
+
+/*ERROR 404 PAGE*/
+
+.error-404 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #412C84;
+}
+
+#sorry {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#back-to-page {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.52;
 }

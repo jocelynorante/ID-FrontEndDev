@@ -1510,7 +1510,102 @@ timestamp {
 }
 
 
-/*ERROR 404 PAGE*/
+/*-------MEMBERS DIRECTORY PAGE-------*/
+
+.members-heading {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 2.74px;
+    color: #FFA544;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    top: 30px;
+}
+
+.members-tabs {
+    display: table;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    left: 600px;
+    top: -40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*active state*/
+
+.members-tabs #my-network {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: #FFA544;
+    width: 215px;
+    height: 45px;
+}
+
+
+/*inactive state*/
+
+.members-tabs #explore {
+    display: table-cell;
+    vertical-align: middle;
+    width: 215px;
+    height: 45px;
+}
+
+.members-dividing-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.5px solid #979797;
+}
+
+.members-page-grid {
+    position: absolute;
+    left: 360px;
+    top: 270px;
+    width: 990px;
+    height: 850px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 261px;
+    grid-column-gap: 24px;
+    grid-row-gap: 28px;
+}
+
+#member-card {
+    background-color: #FBFBFB;
+    width: 221px;
+    height: 261px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#member-card-avi {
+    width: 117px;
+    height: 117px;
+    position: relative;
+    top: 25px;
+    left: 55px;
+    border-radius: 26px;
+    background-color: #606060;
+}
+
+#member-name {
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+
+/*--------ERROR 404 PAGE--------*/
 
 .error-404 {
     font-size: 45px;
